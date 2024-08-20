@@ -213,14 +213,37 @@ internal class Program
         Console.WriteLine(galinha.Nome + " faz: ");
         galinha.emitirSom();
 
+        Mago mago = new Mago();
+        mago.Nome = "Talles o'Mago";
+        mago.Forca = 99;
+        mago.Vida = 1200;
+        mago.Inteligencia = 99;
+        mago.Agilidade = 99;
+        mago.Nivel = 99;
 
+        Elfo elfo = new Elfo();
+        elfo.Nome = "Soteldo";
+        elfo.Forca = 99;
+        elfo.Vida = 1200;
+        elfo.Inteligencia = 99;
+        elfo.Agilidade = 99;
+        elfo.Nivel = 99;
 
+        Cavaleiro cavaleiro = new Cavaleiro();
+        cavaleiro.Nome = "Vasco";
+        cavaleiro.Forca = 99;
+        cavaleiro.Vida = 1200;
+        cavaleiro.Inteligencia = 99;
+        cavaleiro.Agilidade = 99;
+        cavaleiro.Nivel = 99;
 
+        mago.apresentaSe();
+        elfo.apresentaSe();
 
-
-
-
-
+        int ataque = mago.atacar();
+        int defesa = mago.defender();
+        Console.WriteLine("Força do Ataque: " + ataque);
+        Console.WriteLine("Força da Defesa: " + defesa);
 
 
 
