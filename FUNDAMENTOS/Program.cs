@@ -229,6 +229,7 @@ internal class Program
         elfo.Agilidade = 99;
         elfo.Nivel = 99;
 
+
         Cavaleiro cavaleiro = new Cavaleiro();
         cavaleiro.Nome = "Vasco";
         cavaleiro.Forca = 99;
