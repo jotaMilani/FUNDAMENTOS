@@ -18,9 +18,6 @@ namespace FUNDAMENTOS
 
         }
 
-        public override void evoluir()
-        {
 
-        }
     }
 }

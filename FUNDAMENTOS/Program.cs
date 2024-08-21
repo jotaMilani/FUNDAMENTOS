@@ -251,7 +251,7 @@ internal class Program
         Console.WriteLine("========================================");
         Console.WriteLine("Força da Defesa: " + defesa);
         Console.WriteLine("========================================");
-        mago.batalhar(elfo);
+        mago.batalhar(cavaleiro);
 
 
 

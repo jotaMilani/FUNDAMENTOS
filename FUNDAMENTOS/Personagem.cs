@@ -26,7 +26,7 @@ namespace FUNDAMENTOS
             this.Forca *= 2;
             this.Inteligencia *= 2;
             this.Agilidade *= 2;
-            Console.WriteLine("O jogador " + this.Nome + " evoluiu para o nível " + this.Nivel + ". Seus novos valores são: \nAgilidade:" + "\nInteligência:" + "\nForça:");
+            Console.WriteLine("O jogador " + this.Nome + " evoluiu para o nível " + this.Nivel + ". Seus novos valores são: \nAgilidade:" + this.Agilidade + "\nInteligência:" + this.Inteligencia + "\nForça:" + this.Forca);
         }
         public virtual void batalhar() { }
         public virtual int atacar()
@@ -51,6 +51,11 @@ namespace FUNDAMENTOS
                 int valorDefesaInimigo = p.defender();
                 int danoDeVida = valorAtaque - valorDefesaInimigo;
                 p.Vida = p.Vida - danoDeVida;
+                if (danoDeVida <= 0)
+                {
+                    danoDeVida = 1;
+                }
+
                 Console.WriteLine("Dano na Vida do Inimigo em " + danoDeVida);
                 Console.WriteLine("O nível de vida do Inimigo agora é  " + p.Vida);
 
@@ -70,17 +75,19 @@ namespace FUNDAMENTOS
                     Console.WriteLine("O personagem " + p.Nome + " Venceu!");
                     vencedor = true;
                     p.evoluir();
+                }
+
+                if (p.Vida <= 0)
+                {
                     Console.WriteLine("O personagem " + this.Nome + " Venceu!");
                     vencedor = true;
                     this.evoluir();
                 }
             }
-
-
         }
 
 
-
-
     }
+
 }
+
