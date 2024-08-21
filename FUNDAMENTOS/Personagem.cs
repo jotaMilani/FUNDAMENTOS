@@ -26,7 +26,7 @@ namespace FUNDAMENTOS
             this.Forca *= 2;
             this.Inteligencia *= 2;
             this.Agilidade *= 2;
-            Console.WriteLine("O jogador " + this.Nome + "evoluiu para o nível " + this.Nivel + ". Seus novos valores são: \nAgilidade:" + "\nInteligência:" + "\nForça:");
+            Console.WriteLine("O jogador " + this.Nome + " evoluiu para o nível " + this.Nivel + ". Seus novos valores são: \nAgilidade:" + "\nInteligência:" + "\nForça:");
         }
         public virtual void batalhar() { }
         public virtual int atacar()

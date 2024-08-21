@@ -212,6 +212,7 @@ internal class Program
         galinha.Nome = "Pupu";
         Console.WriteLine(galinha.Nome + " faz: ");
         galinha.emitirSom();
+        Console.WriteLine("========================================");
 
         Mago mago = new Mago();
         mago.Nome = "Talles o'Mago";
@@ -220,6 +221,7 @@ internal class Program
         mago.Inteligencia = 99;
         mago.Agilidade = 99;
         mago.Nivel = 99;
+
 
         Elfo elfo = new Elfo();
         elfo.Nome = "Soteldo";
@@ -239,14 +241,17 @@ internal class Program
         cavaleiro.Nivel = 99;
 
         mago.apresentaSe();
+        Console.WriteLine("========================================");
         elfo.apresentaSe();
+        Console.WriteLine("========================================");
 
         int ataque = mago.atacar();
         int defesa = mago.defender();
         Console.WriteLine("Força do Ataque: " + ataque);
+        Console.WriteLine("========================================");
         Console.WriteLine("Força da Defesa: " + defesa);
-
-        mago.batalhar(elfo);
+        Console.WriteLine("========================================");
+        mago.batalhar(cavaleiro);
 
 
 
