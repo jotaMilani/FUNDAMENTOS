@@ -216,29 +216,29 @@ internal class Program
 
         Mago mago = new Mago();
         mago.Nome = "Talles o'Mago";
-        mago.Forca = 99;
-        mago.Vida = 300;
+        mago.Forca = 90;
+        mago.Vida = 120;
         mago.Inteligencia = 99;
-        mago.Agilidade = 99;
-        mago.Nivel = 99;
+        mago.Agilidade = 89;
+        mago.Nivel = 50;
 
 
         Elfo elfo = new Elfo();
         elfo.Nome = "Soteldo";
-        elfo.Forca = 88;
-        elfo.Vida = 900;
+        elfo.Forca = 74;
+        elfo.Vida = 75;
         elfo.Inteligencia = 99;
-        elfo.Agilidade = 88;
-        elfo.Nivel = 88;
+        elfo.Agilidade = 98;
+        elfo.Nivel = 50;
 
 
         Cavaleiro cavaleiro = new Cavaleiro();
         cavaleiro.Nome = "Vasco";
-        cavaleiro.Forca = 99;
-        cavaleiro.Vida = 1200;
-        cavaleiro.Inteligencia = 99;
-        cavaleiro.Agilidade = 99;
-        cavaleiro.Nivel = 99;
+        cavaleiro.Forca = 98;
+        cavaleiro.Vida = 100;
+        cavaleiro.Inteligencia = 78;
+        cavaleiro.Agilidade = 76;
+        cavaleiro.Nivel = 50;
 
         mago.apresentaSe();
         Console.WriteLine("========================================");
@@ -246,12 +246,12 @@ internal class Program
         Console.WriteLine("========================================");
 
         int ataque = mago.atacar();
-        int defesa = mago.defender();
+        int defesa = elfo.defender();
         Console.WriteLine("Força do Ataque: " + ataque);
         Console.WriteLine("========================================");
         Console.WriteLine("Força da Defesa: " + defesa);
         Console.WriteLine("========================================");
-        mago.batalhar(cavaleiro);
+        mago.batalhar(elfo);
 
 
 

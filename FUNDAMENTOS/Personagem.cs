@@ -67,10 +67,10 @@ namespace FUNDAMENTOS
 
                 if (this.Vida <= 0)
                 {
-                    Console.WriteLine("O personagem " + p.Nome + "Venceu!");
+                    Console.WriteLine("O personagem " + p.Nome + " Venceu!");
                     vencedor = true;
                     p.evoluir();
-                    Console.WriteLine("O personagem " + this.Nome + "Venceu!");
+                    Console.WriteLine("O personagem " + this.Nome + " Venceu!");
                     vencedor = true;
                     this.evoluir();
                 }
