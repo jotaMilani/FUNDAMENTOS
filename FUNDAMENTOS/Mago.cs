@@ -13,7 +13,7 @@ namespace FUNDAMENTOS
             Console.WriteLine("Olá, meu nome é " + this.Nome + ", tenho " + this.Vida + " de vida, sou da categoria mago e tenho  " + this.Forca + " de força.");
         }
 
-        public override void batatalhar()
+        public override void batalhar()
         {
 
         }

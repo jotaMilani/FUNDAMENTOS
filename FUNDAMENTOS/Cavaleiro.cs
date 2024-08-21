@@ -14,7 +14,7 @@ namespace FUNDAMENTOS
 
 
         }
-        public virtual void batatalhar()
+        public virtual void batalhar()
         {
         }
         public virtual void evoluir()
